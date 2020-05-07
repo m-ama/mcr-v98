@@ -20,7 +20,7 @@ RUN mkdir /mcr-install && \
 
 RUN cd /mcr-install && \
     wget --no-check-certificate http://ssd.mathworks.com/supportfiles/downloads/R2020a/Release/0/deployment_files/installer/complete/glnxa64/MATLAB_Runtime_R2020a_glnxa64.zip
-RUN cd mcr-install && unzip MATLAB_Runtime_R2019b_Update_5_glnxa64.zip && \
+RUN cd mcr-install && unzip MATLAB_Runtime_R2020a_glnxa64.zip && \
     ./install -destinationFolder /opt/mcr -agreeToLicense yes -mode silent
 RUN rm -rf /mcr-install
 
